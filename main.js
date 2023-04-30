@@ -1,29 +1,5 @@
 $(document).ready(function() {
-    // // Smooth scroll effect for anchor links
-    // $('a[href^="#"]').on('click', function(event) {
-    //   var target = $(this.getAttribute('href'));
-    //   if( target.length ) {
-    //     event.preventDefault();
-    //     $('html, body').stop().animate({
-    //       scrollTop: target.offset().top - 70 // adjust the offset to fit your layout
-    //     }, 1000);
-    //   }
-    // });
-    // Smooth scroll effect for anchor links
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            var offset = target.offset().top;
-            if ($(this).attr("href") === "#projects") { // check if the link is for the projects section
-                offset -= $(".header").outerHeight(); // subtract the height of the header from the offset
-            }
-            $('html, body').stop().animate({
-                scrollTop: offset
-            }, 1000);
-        }
-    });
-  
+      
     // Sticky header effect
     $(window).on("scroll", function() {
       var header = $(".header");

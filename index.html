@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jiacheng Li's Portfolio</title>
+    <title>Kevin Tu's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <nav>
       <div class="container">
-        <a href="#" class="logo">Jiacheng Li</a>
+        <a href="#" class="logo">Kevin Tu</a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <header>
+    <header id="hero">
       <div class="container">
         <div class="hero-text">
-          <h1>Jiacheng Li</h1>
+          <h1>Kevin Tu</h1>
           <h2>Web Developer</h2>
         </div>
       </div>
@@ -32,7 +31,7 @@
     <section id="about">
       <div class="container">
         <h2>About Me</h2>
-        <p>Hi, I'm Jiacheng Li, a web developer based in New York. I specialize in creating beautiful and functional websites using HTML, CSS, and JavaScript.</p>
+        <p>Hi, I'm Kevin Tu, a web developer based in New York. I specialize in creating beautiful and functional websites using HTML, CSS, and JavaScript.</p>
       </div>
     </section>
     <section id="skills">
@@ -70,5 +69,48 @@
         <div class="project">
           <img src="project2.jpg" alt="Project 2">
           <h3>Project 2</h3>
+          <p>Integer in arcu vel arcu consectetur lacinia. Aenean faucibus ex et elit tristique, vel semper massa scelerisque. Sed pellentesque, mauris eget venenatis faucibus, est nisl eleifend lorem, non tincidunt odio velit eu tellus.</p>
+          <div class="project-buttons">
+            <a href="#" class="btn">View Project</a>
+            <a href="#" class="btn">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Project 3</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis, velit at viverra auctor, odio urna tincidunt magna, vel dignissim turpis magna in metus.</p>
-         
+          <div class="project-buttons">
+            <a href="#" class="btn">View Project</a>
+            <a href="#" class="btn">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <footer>
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
